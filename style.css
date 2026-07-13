@@ -542,3 +542,52 @@ box-shadow:
 0 0 60px #ff7eb6;
 
 }
+#loading{
+
+position:fixed;
+
+left:0;
+top:0;
+
+width:100%;
+height:100%;
+
+background:#070707;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:28px;
+
+z-index:999999;
+
+animation:loading 3s forwards;
+
+}
+
+@keyframes loading{
+
+0%{
+
+opacity:1;
+
+}
+
+80%{
+
+opacity:1;
+
+}
+
+100%{
+
+opacity:0;
+
+visibility:hidden;
+
+}
+
+}
