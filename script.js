@@ -316,7 +316,9 @@ function animateConfetti(){
 
 ctx.clearRect(0,0,canvas.width,canvas.height);
 
-confettis.forEach((c,index)=>{
+for(let i=confettis.length-1;i>=0;i--){
+
+let c=confettis[i];
 
 ctx.fillStyle=c.color;
 
@@ -328,12 +330,11 @@ c.x+=Math.sin(c.y*0.02);
 
 if(c.y>canvas.height){
 
-confettis.splice(index,1);
+confettis.splice(i,1);
 
 }
 
-});
-
+}
 requestAnimationFrame(animateConfetti);
 
 }
