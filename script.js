@@ -185,11 +185,13 @@ noBtn.style.transform=`translate(${x}px,${y}px)`;
 
 yesBtn.addEventListener("click",()=>{
 
-alert("Yeayyy ❤️\n\nDimas seneng banget. Semoga kita selalu bareng ya Bubub. 🤍");
+createConfetti();
 
 document.getElementById("question").classList.add("hidden");
 
 document.getElementById("ending").classList.remove("hidden");
+
+bgMusic.volume=0.3;
 
 });
 
