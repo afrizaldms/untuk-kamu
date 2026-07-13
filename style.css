@@ -441,3 +441,60 @@ opacity:0;
 }
 
 }
+.secret-card{
+
+    width:min(90%,750px);
+
+    background:rgba(255,255,255,.08);
+
+    padding:45px;
+
+    border-radius:25px;
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+}
+
+.secret-card p{
+
+    margin-top:20px;
+
+    line-height:2;
+
+    font-size:20px;
+
+}
+.page{
+
+transition:.8s;
+
+}
+
+.hidden{
+
+display:none;
+
+opacity:0;
+
+}
+#musicBtn{
+
+position:fixed;
+
+right:20px;
+
+top:20px;
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+font-size:22px;
+
+z-index:999;
+
+}
