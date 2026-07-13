@@ -299,6 +299,17 @@ justify-content:center;
 }
 
 /* ========================= */
+#loading h1{
+
+font-family:'Great Vibes',cursive;
+
+font-size:55px;
+
+color:#ff7eb6;
+
+text-align:center;
+
+}
 
 #ending h1{
 
