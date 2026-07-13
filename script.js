@@ -229,3 +229,28 @@ heart.remove();
 }
 
 setInterval(createHeart,500);
+const musicBtn=document.getElementById("musicBtn");
+
+let playing=false;
+
+musicBtn.onclick=function(){
+
+if(playing){
+
+bgMusic.pause();
+
+playing=false;
+
+musicBtn.innerHTML="🎵";
+
+}else{
+
+bgMusic.play();
+
+playing=true;
+
+musicBtn.innerHTML="⏸";
+
+}
+
+}
