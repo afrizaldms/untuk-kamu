@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Bubub Dira ❤️</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="stars"></div>
+
+<div class="opening active" id="opening">
+
+    <h3 class="small">
+        Website ini dibuat khusus
+    </h3>
+
+    <h1 class="title">
+        Untuk Bubub Dira ❤️
+    </h1>
+
+    <p class="desc">
+        Ada seseorang yang ingin menyampaikan sesuatu...
+    </p>
+
+    <button id="startBtn">
+        Buka Cerita Kita
+    </button>
+
+</div>
+
+<section class="page hidden" id="welcome">
+
+    <h2>Halo Bubub Dira 🌸</h2>
+
+    <p id="typing"></p>
+
+    <button class="next">
+        Lanjut ➜
+    </button>
+
+</section>
+
+<section class="page hidden" id="letter">
+
+    <div class="letter">
+
+        <h2>Untuk Kamu ❤️</h2>
+
+        <p>
+            Aku nggak tahu kamu bakal baca ini kapan.
+            Tapi semoga saat kamu membacanya,
+            kamu lagi dalam keadaan bahagia.
+
+            Website kecil ini mungkin sederhana.
+
+            Tapi semuanya aku buat
+            khusus untuk kamu.
+        </p>
+
+        <button class="next">
+            Lanjut ➜
+        </button>
+
+    </div>
+
+</section>
+
+<section class="page hidden" id="reasons">
+
+    <h2>
+        Alasan Kenapa Aku Sayang Kamu ❤️
+    </h2>
+
+    <div class="reason-card">
+
+        <p id="reasonText">
+            Klik tombol di bawah ya ❤️
+        </p>
+
+        <button id="reasonBtn">
+            Tampilkan Alasan
+        </button>
+
+    </div>
+
+    <button class="next">
+        Lanjut ➜
+    </button>
+
+</section>
+
+<section class="page hidden" id="secret">
+
+    <div class="envelope">
+
+        <h2>💌</h2>
+
+        <button id="openLetter">
+            Buka Surat Rahasia
+        </button>
+
+    </div>
+
+</section>
+
+<section class="page hidden" id="question">
+
+    <h2>
+
+        Bubub...
+
+        Mau terus sama Dimas?
+
+    </h2>
+
+    <div class="buttons">
+
+        <button id="yes">
+            ❤️ Mau
+        </button>
+
+        <button id="no">
+            💔 Tidak
+        </button>
+
+    </div>
+
+</section>
+
+<section class="page hidden" id="ending">
+
+    <h1>
+        I Love You
+    </h1>
+
+    <h2>
+        Bubub Dira ❤️
+    </h2>
+
+    <p>
+
+        Terima kasih
+        sudah hadir
+        di hidup Dimas.
+
+        Semoga
+        kita selalu
+        saling menjaga.
+
+    </p>
+
+    <span>
+
+        Made with ❤️
+
+        by
+
+        Dimas
+        yang paling manis
+        se-Indonesia.
+
+    </span>
+
+</section>
+
+<audio id="bgMusic" loop>
+    <source src="music/shape-of-my-heart.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
