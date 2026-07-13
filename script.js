@@ -254,3 +254,77 @@ musicBtn.innerHTML="⏸";
 }
 
 }
+// =======================
+// CONFETTI
+// =======================
+
+const canvas = document.getElementById("confetti");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+window.addEventListener("resize",()=>{
+
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+});
+
+let confettis=[];
+
+function Confetti(){
+
+this.x=Math.random()*canvas.width;
+this.y=-20;
+
+this.size=Math.random()*8+5;
+
+this.speed=Math.random()*3+2;
+
+this.color=[
+"#ff7eb6",
+"#ffffff",
+"#ffc2dd",
+"#ff4f9d"
+][Math.floor(Math.random()*4)];
+
+}
+
+function createConfetti(){
+
+for(let i=0;i<150;i++){
+
+confettis.push(new Confetti());
+
+}
+
+}
+
+function animateConfetti(){
+
+ctx.clearRect(0,0,canvas.width,canvas.height);
+
+confettis.forEach((c,index)=>{
+
+ctx.fillStyle=c.color;
+
+ctx.fillRect(c.x,c.y,c.size,c.size);
+
+c.y+=c.speed;
+
+c.x+=Math.sin(c.y*0.02);
+
+if(c.y>canvas.height){
+
+confettis.splice(index,1);
+
+}
+
+});
+
+requestAnimationFrame(animateConfetti);
+
+}
+
+animateConfetti();
