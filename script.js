@@ -158,6 +158,8 @@ kita tetap saling memilih.
 
 I Love You ❤️`);
 
+showPage(currentPage + 1);
+
 });
 
 // ==============================
