@@ -166,11 +166,16 @@ I Love You ❤️`);
 
 noBtn.addEventListener("mouseover",()=>{
 
-const x=Math.random()*300-150;
+const maxX=window.innerWidth-150;
+const maxY=window.innerHeight-100;
 
-const y=Math.random()*200-100;
+const x=Math.random()*maxX;
+const y=Math.random()*maxY;
 
-noBtn.style.transform=`translate(${x}px,${y}px)`;
+noBtn.style.position="fixed";
+
+noBtn.style.left=x+"px";
+noBtn.style.top=y+"px";
 
 });
 
