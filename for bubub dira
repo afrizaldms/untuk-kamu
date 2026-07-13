@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-
+<div id="heart-container"></div>
 <body>
 
 <div id="stars"></div>
