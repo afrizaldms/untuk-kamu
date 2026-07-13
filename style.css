@@ -517,3 +517,28 @@ pointer-events:none;
 z-index:9999;
 
 }
+body{
+
+cursor:default;
+
+}
+
+button{
+
+transition:.35s;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+box-shadow:
+
+0 0 20px #ff7eb6,
+
+0 0 40px #ff7eb6,
+
+0 0 60px #ff7eb6;
+
+}
