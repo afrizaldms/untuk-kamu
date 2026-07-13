@@ -243,27 +243,23 @@ const musicBtn=document.getElementById("musicBtn");
 
 let playing=false;
 
-musicBtn.onclick=function(){
+musicBtn.addEventListener("click",()=>{
 
-if(playing){
-
-bgMusic.pause();
-
-playing=false;
-
-musicBtn.innerHTML="🎵";
-
-}else{
+if(bgMusic.paused){
 
 bgMusic.play();
 
-playing=true;
-
 musicBtn.innerHTML="⏸";
 
-}
+}else{
+
+bgMusic.pause();
+
+musicBtn.innerHTML="🎵";
 
 }
+
+});
 // =======================
 // CONFETTI
 // =======================
