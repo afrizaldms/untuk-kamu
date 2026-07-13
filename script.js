@@ -70,28 +70,36 @@ let current = 0;
 
 startBtn.addEventListener("click",()=>{
 
-    opening.classList.remove("active");
-    opening.style.display="none";
+opening.style.display="none";
 
-    document.getElementById(order[0]).classList.remove("hidden");
+showPage(0);
 
-    bgMusic.play().catch(()=>{});
+bgMusic.play().catch(()=>{});
 
-    typeWriter();
+typeWriter();
 
 });
+let currentPage = 0;
 
-nextButtons.forEach(btn=>{
+function showPage(index){
 
-btn.addEventListener("click",()=>{
+pages.forEach(page=>{
+page.classList.add("hidden");
+});
 
-pages[current].classList.add("hidden");
+pages[index].classList.remove("hidden");
 
-current++;
+currentPage = index;
 
-if(current<pages.length){
+}
 
-pages[current].classList.remove("hidden");
+nextButtons.forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+if(currentPage < pages.length-1){
+
+showPage(currentPage+1);
 
 }
 
