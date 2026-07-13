@@ -108,7 +108,7 @@ showPage(currentPage+1);
 });
 
 // ==============================
-// 100 Alasan Sayang
+// Alasan Sayang
 // ==============================
 
 const reasons=[
