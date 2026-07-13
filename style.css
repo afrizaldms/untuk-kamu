@@ -591,3 +591,18 @@ visibility:hidden;
 }
 
 }
+.page{
+
+opacity:1;
+
+transition:.8s ease;
+
+}
+
+.hidden{
+
+display:none;
+
+opacity:0;
+
+}
