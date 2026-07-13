@@ -621,3 +621,32 @@ font-size:13px;
 color:#999;
 
 }
+#stars{
+
+animation:
+
+starsMove 60s linear infinite,
+
+blink 3s infinite;
+
+}
+
+@keyframes blink{
+
+0%{
+
+opacity:.6;
+
+}
+
+50%{
+
+opacity:1;
+
+}
+
+100%{
+
+opacity:.6;
+
+}
