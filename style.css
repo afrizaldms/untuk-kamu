@@ -606,3 +606,18 @@ display:none;
 opacity:0;
 
 }
+footer{
+
+position:fixed;
+
+bottom:15px;
+
+width:100%;
+
+text-align:center;
+
+font-size:13px;
+
+color:#999;
+
+}
