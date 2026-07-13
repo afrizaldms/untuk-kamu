@@ -338,3 +338,30 @@ requestAnimationFrame(animateConfetti);
 }
 
 animateConfetti();
+// =========================
+// SHOOTING STAR
+// =========================
+
+const shooting=document.getElementById("shooting-stars");
+
+function createStar(){
+
+const star=document.createElement("div");
+
+star.classList.add("star");
+
+star.style.left=Math.random()*window.innerWidth+"px";
+
+star.style.top=Math.random()*200+"px";
+
+shooting.appendChild(star);
+
+setTimeout(()=>{
+
+star.remove();
+
+},2000);
+
+}
+
+setInterval(createStar,3500);
